@@ -1,0 +1,15 @@
+server:
+  port: 31001
+spring:
+  application:
+    name: xc-service-manage-cms
+  resources:
+    static-locations: classpath:*
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url:  jdbc:mysql://localhost:3306/mysql?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: 123456
+
+
+
