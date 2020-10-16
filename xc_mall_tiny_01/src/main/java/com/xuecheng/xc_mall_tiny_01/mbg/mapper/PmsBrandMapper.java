@@ -4,7 +4,8 @@ import com.xuecheng.xc_mall_tiny_01.mbg.model.PmsBrand;
 import com.xuecheng.xc_mall_tiny_01.mbg.model.PmsBrandExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
-
+import org.springframework.stereotype.Repository;
+@Repository
 public interface PmsBrandMapper {
     int countByExample(PmsBrandExample example);
 
