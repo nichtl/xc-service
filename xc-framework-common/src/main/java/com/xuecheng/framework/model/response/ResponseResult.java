@@ -29,6 +29,11 @@ public class ResponseResult implements Response {
         this.code = resultCode.code();
         this.message = resultCode.message();
     }
+    public ResponseResult(Boolean success, int code,String message){
+        this.success = success;
+        this.code = code;
+        this.message = message;
+    }
 
     public static ResponseResult SUCCESS(){
         return new ResponseResult(CommonCode.SUCCESS);
@@ -36,5 +41,7 @@ public class ResponseResult implements Response {
     public static ResponseResult FAIL(){
         return new ResponseResult(CommonCode.FAIL);
     }
-
+    public static ResponseResult UNAUTH(){
+        return new ResponseResult(CommonCode.UNAUTHORISE);
+    }
 }
